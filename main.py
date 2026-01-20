@@ -1,113 +1,24 @@
-class Dog:
-    def __init__(self):
-        pass
+#!/usr/bin/env python3
+import sys
+from monkey import Monkey
 
 
-class Card:
-    def __init__(self, suit):
-        self.suit = suit
+def main():
+    """Main entry point."""
+    if len(sys.argv) < 2:
+        print("Usage: script.py <name>")
+        return 1
+
+    name = sys.argv[1]
+
+    age = input("Enter monkey's age: ")
+    favorite_food = input("Enter monkey's favorite food: ")
+
+    monkey = Monkey(name, age, favorite_food)
+    print(monkey)
+
+    return 0
 
 
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self):
-        pass
-
-
-class Card:
-    def __init__(self):
-        pass
-
-
-class Card:
-    def __init__(self):
-        pass
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
-
-
-class Card:
-    def __init__(self, suit, rank):
-        self.suit = suit
-        self.rank = rank
+if __name__ == "__main__":
+    sys.exit(main())
